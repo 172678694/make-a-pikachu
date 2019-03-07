@@ -7,16 +7,33 @@ body{
 #code-wrapper{ 
     flex: 1;
     height: 50%;
-    margin:0 10px;
 }
 #preview{
     flex: 1;
     height: 50%;
-    margin:0 10px;
 }
 #code{
     overflow: hidden;
     height: 100%;
+    padding: 16px;
+}
+
+.actions{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.actions> button{
+    flex: 1;
+    margin: 5px;
     padding: 10px;
-    
+    border: none;  
+}
+.actions>button:focus{
+    outline: none;
+  }
+.actions>button.active{
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
 }
